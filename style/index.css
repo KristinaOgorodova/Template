@@ -1,3 +1,4 @@
-@import url("normalize.css");
-@import url("Global_style.css");
-@import url("header.css");
+@import "normalize.css";
+@import "Global_style.css";
+@import "header.css";
+@import "main.css";
