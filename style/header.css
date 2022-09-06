@@ -1,14 +1,17 @@
 body {
-    posititon: relative;
-    z-index: 1;
+    position: relative;
     margin: 0;
+    padding: 0;
     color: #fff;
 }
 
 .header {
-    position: relative;
-    z-index:4;
-    padding-top: 49px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    padding-top: 40px;
 }
 
 .header__container {
@@ -18,7 +21,7 @@ body {
 }
 
 .header__phone {
-    font-size: 23.85px;
+    font-size: 24px;
     line-height: 28px;
     margin-bottom: 3px;
 }
@@ -33,11 +36,9 @@ body {
     background-image: url("../image/stag-office-mockup.jpg");
     background-size: cover;
     background-position: center;
-    position: absolute;
-    z-index: 2;
-    top:0;
-    width:100%;
-    padding-top: 226px;
+    background-repeat: no-repeat;
+    margin-bottom: 70px;
+    min-height: 732px;
 
 }
 
@@ -45,15 +46,19 @@ body {
     content: '';
     background-color: rgba(47, 50, 75, 0.85);
     position: absolute;
-    z-index:3;
-    inset: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
 }
 
 .introduction__container {
     position: relative;
-    z-index: 4;
+    z-index: 2;
     text-align: center;
     max-width:960px;
+    padding-top: 228px;
 }
 
 .introduction__title {
@@ -124,6 +129,10 @@ body {
         max-width: 60px;
         max-height: 60px;
     }
+
+    .introduction__container {
+        padding-top: 156px;
+    }
 }
 
 @media (max-width: 380px)  {
@@ -165,5 +174,6 @@ body {
     .introduction {
         background-position: 25% 70%;
     }
+
 
 }
