@@ -1,10 +1,17 @@
 .bottom {
     padding-top: 45px;
 }
+
+.bottom {
+    min-height: 158px;
+    background-color: #2F324B;;
+}
+
 .bottom__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
 
 .bottom__company {
@@ -22,4 +29,67 @@
 .border {
     min-width: 127px;
     white-space: pre-line;
+}
+
+@media (max-width: 1024px) {
+    .bottom__logo {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .bottom {
+        min-height: 80px;
+        padding-top: 25px;
+    }
+    .bottom__logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .bottom__text {
+        font-size: 8px;
+        line-height: 11px;
+    }
+
+    .small-screen-footer {
+        min-height: 47px;
+        background-color:  #2A2C3F;
+        text-align: center;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 17px;
+        color: #FFFFFF;
+        padding-top: 15px;
+    }
+
+    .master {
+        display: none;
+    }
+
+    .small-screen-footer {
+        position: relative;
+    }
+
+    .small-screen-footer:after {
+        content: '';
+        background-color: rgba(47, 50, 75, 0.50);
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    .bottom__company {
+        gap:19px;
+    }
+
+    .border {
+        text-align: left;
+
+    }
+
 }

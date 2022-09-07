@@ -20,11 +20,6 @@
     z-index: -1;
 }
 
-.bottom {
-    min-height: 158px;
-    background-color: #2F324B;;
-}
-
 .form__container {
     text-align: center;
 }
@@ -55,7 +50,7 @@
 }
 
 .form__input {
-    width: 423px;
+    min-width: 423px;
     min-height: 44px;
     border: 1.38235px solid #FFFFFF;
     border-radius: 50px;
@@ -85,7 +80,7 @@
     text-align: center;
     color: #FFFFFF;
     background: #15A9CB;
-    box-shadow: 0px 4px 25px rgba(21, 169, 203, 0.3);
+    box-shadow: 0 4px 25px rgba(21, 169, 203, 0.3);
     border-radius: 50px;
     min-width: 218px;
     height: 48px;
@@ -104,4 +99,71 @@
 .form__agreement {
     text-decoration: underline;
     color: rgba(74, 118, 168, 1);
+}
+
+@media (max-width: 1024px){
+
+    .form__title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .form__under-title {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    ::placeholder {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .form__text {
+        font-size: 17px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 380px) {
+    .form__title {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .form__under-title {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .form__input {
+        min-width: 290px;
+        min-height: 28px;
+    }
+
+    .form__submit {
+        min-width: 174px;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 30px;
+    }
+
+    ::placeholder {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .form__text {
+        font-size: 11px;
+        line-height: 13px;
+        margin-bottom: 30px;
+    }
+
+    .form__input-email {
+        margin-bottom: 45px;
+    }
+
+    .form {
+        padding-top:30px;
+        min-height: 398px;
+    }
 }
