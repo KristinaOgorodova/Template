@@ -19,6 +19,8 @@
     text-align: center;
     position: relative;
     margin-bottom: 35px;
+
+
 }
 
 .about-us__small-title:before {
@@ -26,9 +28,7 @@
     Width: 43px;
     Height: 2px;
     background: #383A4C;
-    position: absolute;
-    top:15px;
-    left:500px;
+
 }
 
 .about-us__small-title:after {
@@ -36,9 +36,8 @@
     Width: 43px;
     Height: 2px;
     background: #383A4C;
-    position: absolute;
-    top:15px;
-    right:500px;
+
+
 }
 
 .about-us__description {
@@ -77,4 +76,69 @@
     line-height: 28px;
     text-align: center;
     color: #383A4C;
+}
+
+@media (max-width: 1024px){
+    .about-us__title {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .about-us__small-title {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .about-us__description {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .about-us__text {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .about-us__img{
+        max-width: 104px;
+        max-height: 104px;
+    }
+    .about-us__small-title:before {
+        left:400px;
+    }
+
+    .about-us__small-title:after {
+        right:400px;
+    }
+    .about-us__advantages {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 380px) {
+    .about-us__title {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .about-us__small-title {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .about-us__description {
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .about-us__advantages {
+        flex-direction: column;
+        gap: 40px;
+
+    }
+    .about-us__text  {
+        max-width: 166px;
+
+    }
 }

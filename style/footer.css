@@ -1,0 +1,25 @@
+.bottom {
+    padding-top: 45px;
+}
+.bottom__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom__company {
+    display: flex;
+    align-items: center;
+    gap:19px;
+}
+
+.footer__bottom-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.border {
+    min-width: 127px;
+    white-space: pre-line;
+}

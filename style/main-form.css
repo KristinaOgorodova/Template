@@ -1,0 +1,107 @@
+.form {
+    background-image: url("../image/footer.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 621px;
+    z-index: -2;
+    padding-top: 70px;
+}
+
+.form:after {
+    content: '';
+    background-color: rgba(47, 50, 75, 0.85);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.bottom {
+    min-height: 158px;
+    background-color: #2F324B;;
+}
+
+.form__container {
+    text-align: center;
+}
+
+.form__title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 41px;
+    margin-bottom: 17px;
+}
+
+.form__under-title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 30px;
+}
+
+.form__form {
+    border: none;
+    max-width: 423px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.form__input {
+    width: 423px;
+    min-height: 44px;
+    border: 1.38235px solid #FFFFFF;
+    border-radius: 50px;
+    background-color: transparent;
+}
+
+.form__input{
+    margin-bottom: 21px;
+}
+
+::placeholder {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.5);
+    padding-left: 25px;
+}
+
+.form__input-email {
+    margin-bottom: 50px;
+}
+
+.form__submit {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #15A9CB;
+    box-shadow: 0px 4px 25px rgba(21, 169, 203, 0.3);
+    border-radius: 50px;
+    min-width: 218px;
+    height: 48px;
+    border: none;
+    margin-bottom: 61px;
+}
+
+.form__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.form__agreement {
+    text-decoration: underline;
+    color: rgba(74, 118, 168, 1);
+}
