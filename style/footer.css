@@ -1,9 +1,9 @@
 .bottom {
-    padding-top: 45px;
+    padding-top: 47px;
 }
 
 .bottom {
-    min-height: 158px;
+    height: 158px;
     background-color: #2F324B;;
 }
 
@@ -17,10 +17,11 @@
 .bottom__company {
     display: flex;
     align-items: center;
-    gap:19px;
+    gap:12px;
+
 }
 
-.footer__bottom-text {
+.bottom__text {
     font-weight: 500;
     font-size: 12px;
     line-height: 17px;
@@ -29,27 +30,43 @@
 .border {
     min-width: 127px;
     white-space: pre-line;
+    padding-left:1px ;
+    padding-bottom: 1px;
+}
+
+.bottom__contacts {
+    padding-right: 1px;
+    padding-bottom: 5px;
 }
 .small-screen-footer {
-   visibility: hidden;
+   display: none;
 }
 
 
 @media (max-width: 1024px) {
+    .bottom {
+        padding-top: 38px;
+    }
     .bottom__logo {
         width: 60px;
         height: 60px;
     }
+
+    .bottom__ivan  {
+        max-width: 200px;
+        padding-right: 10px;
+
+    }
     .small-screen-footer {
-       visibility: hidden;
+        display: none;
     }
 }
 
 @media (max-width: 380px) {
 
     .bottom {
-        min-height: 80px;
-        padding-top: 25px;
+        height: 80px;
+        padding-top: 23px;
     }
     .bottom__logo {
         width: 30px;
@@ -61,16 +78,19 @@
         line-height: 11px;
     }
 
-    .small-screen-footer {
-        min-height: 47px;
-        background-color:  #2A2C3F;
+    .bottom__contacts {
+        padding-top: 5px;
+    }
+
+    .bottom__text-small-screen {
         text-align: center;
         font-weight: 500;
         font-size: 12px;
         line-height: 17px;
         color: #FFFFFF;
-        padding-top: 15px;
-        display: ;
+        padding-top: 14px;
+        display:block;
+
     }
 
     .master {
@@ -78,9 +98,11 @@
     }
 
     .small-screen-footer {
-        position: relative;
-        visibility: visible;
+        height: 47px;
+        background-color:  #2A2C3F;
+        display: block;
     }
+
 
     .small-screen-footer:after {
         content: '';

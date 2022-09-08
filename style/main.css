@@ -1,6 +1,7 @@
 .about-us {
     color:#383A4C;
-    /*padding-top: 680px;*/
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 .about-us__title {
@@ -9,6 +10,7 @@
     line-height: 41px;
     text-align: center;
     margin-bottom: 25px;
+    padding-right: 4px;
 
 }
 
@@ -19,8 +21,7 @@
     text-align: center;
     position: relative;
     margin-bottom: 35px;
-
-
+    padding-right: 4px;
 }
 
 .about-us__small-title:before {
@@ -36,8 +37,6 @@
     Width: 43px;
     Height: 2px;
     background: #383A4C;
-
-
 }
 
 .about-us__description {
@@ -46,27 +45,29 @@
     line-height: 25px;
     text-align: center;
     max-width: 724px;
-    margin: 0 auto 50px;
+    margin: 0 auto 62px;
+    padding-right: 4px;
 }
 
 .about-us__advantages {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin:0 auto 70px;
-    max-width: 884px;
+    justify-content: space-around;
+    margin:0 auto 2px;
+    max-width: 984px;
 }
 
 .about-us__item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:16px;
+    max-width: 196px;
+    gap: 11px;
 }
 
 .about-us__img {
-    max-width: 122px;
-    max-height: 122px;
+    width: 122px;
+    height: 122px;
 
 }
 
@@ -79,6 +80,10 @@
 }
 
 @media (max-width: 1024px){
+    .about-us {
+        max-height: 565px;
+    }
+
     .about-us__title {
         font-size: 32px;
         line-height: 38px;
@@ -87,11 +92,20 @@
     .about-us__small-title {
         font-size: 20px;
         line-height: 23px;
+        margin-bottom: 30px;
+
     }
 
     .about-us__description {
         font-size: 16px;
         line-height: 23px;
+        max-width: 666px;
+        margin-bottom: 60px;
+    }
+
+    .about-us__item {
+        gap:24px;
+        max-width: 180px;
     }
 
     .about-us__text {
@@ -113,28 +127,42 @@
     .about-us__advantages {
         flex-wrap: wrap;
         gap: 20px;
+        max-width: 898px;
     }
 }
 
 @media (max-width: 380px) {
+
+    .about-us {
+        padding-top: 30px;
+        max-height: 1176px;
+    }
+
     .about-us__title {
         font-size: 20px;
         line-height: 23px;
+        padding-left: 4px;
+        margin-bottom: 18px;
     }
 
     .about-us__small-title {
         font-size: 16px;
         line-height: 19px;
+        padding-left: 4px;
+        margin-bottom: 29px;
     }
 
     .about-us__description {
         font-size: 12px;
         line-height: 17px;
+        padding-left: 4px;
+        margin-bottom: 40px;
     }
 
     .about-us__advantages {
         flex-direction: column;
         gap: 40px;
+        height: 848px;
 
     }
     .about-us__text  {
