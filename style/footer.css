@@ -30,11 +30,18 @@
     min-width: 127px;
     white-space: pre-line;
 }
+.small-screen-footer {
+   visibility: hidden;
+}
+
 
 @media (max-width: 1024px) {
     .bottom__logo {
         width: 60px;
         height: 60px;
+    }
+    .small-screen-footer {
+       visibility: hidden;
     }
 }
 
@@ -63,6 +70,7 @@
         line-height: 17px;
         color: #FFFFFF;
         padding-top: 15px;
+        display: ;
     }
 
     .master {
@@ -71,6 +79,7 @@
 
     .small-screen-footer {
         position: relative;
+        visibility: visible;
     }
 
     .small-screen-footer:after {
