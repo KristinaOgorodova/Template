@@ -47,7 +47,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    max-height: 732px;
+    min-height: 732px;
     position: relative;
     margin-bottom: 0;
 
@@ -143,7 +143,7 @@ body {
     }
 
     .introduction {
-        max-height: 528px;
+        min-height: 528px;
     }
 
     .introduction__btn {
@@ -171,6 +171,17 @@ body {
 
     .introduction__container {
         padding-top: 156px;
+    }
+}
+@media (max-width: 600px) {
+    .header__phone,
+    .header__phone-link {
+        display: none;
+    }
+    .for-small-screen {
+        display: block;
+        width: 24px;
+        height: 24px;
     }
 }
 
@@ -226,8 +237,14 @@ body {
 
     .introduction {
         background-position:  left;
-        max-height: 441px;
+        min-height: 441px;
+        position: relative;
     }
+
+    .introduction::after{
+         min-height: 441px;
+     }
+
     .introduction__container {
         padding-top: 110px;
     }

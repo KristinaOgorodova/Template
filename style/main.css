@@ -81,7 +81,7 @@
 
 @media (max-width: 1024px){
     .about-us {
-        max-height: 565px;
+        min-height: 565px;
     }
 
     .about-us__title {

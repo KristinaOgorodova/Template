@@ -3,7 +3,7 @@
 }
 
 .bottom {
-    height: 158px;
+    min-height: 158px;
     background-color: #2F324B;;
 }
 
@@ -12,13 +12,14 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .bottom__company {
     display: flex;
     align-items: center;
     gap:12px;
-
 }
 
 .bottom__text {
@@ -38,6 +39,7 @@
     padding-right: 1px;
     padding-bottom: 5px;
 }
+
 .small-screen-footer {
    display: none;
 }
@@ -46,6 +48,7 @@
 @media (max-width: 1024px) {
     .bottom {
         padding-top: 38px;
+        min-height: 146px;
     }
     .bottom__logo {
         width: 60px;
@@ -60,12 +63,14 @@
     .small-screen-footer {
         display: none;
     }
+
 }
 
-@media (max-width: 380px) {
+
+@media (max-width: 600px) {
 
     .bottom {
-        height: 80px;
+        min-height: 80px;
         padding-top: 23px;
     }
     .bottom__logo {
@@ -101,6 +106,7 @@
         height: 47px;
         background-color:  #2A2C3F;
         display: block;
+        position: relative;
     }
 
 
